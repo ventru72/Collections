@@ -10,6 +10,14 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            
+            int [] arr = new int[] {1,2,2,2,2,3,5,6 };
+            HashSet<int> set = new HashSet<int>(arr);
+            foreach (var i in set)
+            {
+                Console.Write(i);
+            }
+            Console.ReadKey();
         }
     }
 }
