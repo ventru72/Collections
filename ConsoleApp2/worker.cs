@@ -8,27 +8,25 @@ namespace ConsoleApp2
 {
     internal struct worker
     {
+
         private string name;
         private string last_name;
         private int age;
-
         public string Name { get; set; }
         public string Last_name { get; set; }
         public int Age { get; set; }
-
-        public int SomeProp { get; set; }
-
-        public worker ( string name, string last_name, int age) : this()
+        public worker(string name, string last_name, int age) : this()
         {
-            this.name = name;
-            this.last_name = last_name;
-            this.age = age;
+            Name = name;
+            Last_name = last_name;
+            Age = age;
         }
-        public worker(string name ) : this()
+       
+
+        public string  Print( )
         {
-            this.name = name;
-            this.last_name = string.Empty;
-            this.age = 0;
+            return  $"Имя {Name}| Фамилия {Last_name}| Возвраст {Age}" ;
+            
         }
 
     }
